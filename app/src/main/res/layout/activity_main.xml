@@ -32,31 +32,31 @@
             android:paddingTop="200dp">
 
             <Button
-                android:textSize="16sp"
                 android:id="@+id/btn_LogIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/droidserifregular"
                 android:text="Log In"
-                android:fontFamily="@font/droidserifregular"/>
+                android:textSize="16sp" />
 
             <Button
-                android:textSize="16sp"
                 android:id="@+id/btn_Register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/droidserifregular"
                 android:text="Register"
-                android:fontFamily="@font/droidserifregular"/>
+                android:textSize="16sp" />
 
         </LinearLayout>
 
         <Button
-            android:textSize="16sp"
             android:id="@+id/btn_FAQs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:fontFamily="@font/droidserifregular"
             android:text="FAQ's"
-            android:fontFamily="@font/droidserifregular"/>
+            android:textSize="16sp" />
 
     </LinearLayout>
 
