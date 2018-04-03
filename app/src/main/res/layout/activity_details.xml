@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dispMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidserifregular"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="Cotorreo"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droidserifregular"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="Meeting Point: "
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <Button
+            android:textSize="16sp"
+            android:id="@+id/btn_nextUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:fontFamily="@font/droidserifregular"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

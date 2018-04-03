@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">e-Ride</string>
+    <string name="cotorreo">"Your diver will arrive at %1$s to pick you up at %2$s with a +-2 minutes difference, you will be notified when the driver arrives. Please, be ready."</string>
+</resources>
