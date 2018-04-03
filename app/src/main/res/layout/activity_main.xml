@@ -11,7 +11,7 @@
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/eRide" />
+        app:srcCompat="@drawable/e_ride" />
 
     <TextView
         android:id="@+id/textView9"
@@ -43,19 +43,19 @@
         android:text="Name" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_LogIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_Register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_FAQs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
