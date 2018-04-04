@@ -4,59 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="20dp"
     android:orientation="vertical"
     tools:context="itesm.mx.e_ride.MainActivity">
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         app:srcCompat="@drawable/e_ride" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gotham_black"
+        android:letterSpacing="250"
+        android:text="@string/username" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/VerdeOscuro"
         android:ems="10"
+        android:fontFamily="@font/gotham_black"
         android:inputType="textPersonName"
-        android:shadowColor="@color/VerdeOscuro"
         android:text="Name" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gotham_black"
+        android:text="@string/password" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/VerdeOscuro"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:fontFamily="@font/gotham_black"
+        android:inputType="textPassword"
         android:text="Name" />
 
-    <Button
-        android:id="@+id/btn_LogIn"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:orientation="vertical"
+        android:weightSum="3">
 
-    <Button
-        android:id="@+id/btn_Register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        <Button
+            android:id="@+id/btn_LogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_green"
+            android:fontFamily="@font/gotham_black"
+            android:text="Button" />
 
-    <Button
-        android:id="@+id/btn_FAQs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_green"
+            android:fontFamily="@font/gotham_black"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btn_FAQs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_green"
+            android:fontFamily="@font/gotham_black"
+            android:text="Button" />
+
+    </LinearLayout>
+
 </LinearLayout>

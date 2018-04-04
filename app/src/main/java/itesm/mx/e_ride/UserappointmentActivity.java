@@ -34,8 +34,8 @@ public class UserappointmentActivity extends AppCompatActivity implements View.O
         btn_submit=findViewById(R.id.btn_submitUser);
         et_To=findViewById(R.id.et_To);
         et_From=findViewById(R.id.et_From);
-        et_PickTime=findViewById(R.id.et_PickTime);
-        et_ArrivalTime=findViewById(R.id.et_ArrTime);
+        //et_PickTime=findViewById(R.id.et_PickTime);
+        //et_ArrivalTime=findViewById(R.id.et_ArrTime);
 
         btn_submit.setOnClickListener(this);
     }
@@ -69,8 +69,8 @@ public class UserappointmentActivity extends AppCompatActivity implements View.O
 
         intent.putExtra("To",et_To.getText().toString());
         intent.putExtra("From",et_From.getText().toString());
-        intent.putExtra("PickTime",et_PickTime.getText().toString());
-        intent.putExtra("ArrTime",et_ArrivalTime.getText().toString());
+        //intent.putExtra("PickTime",et_PickTime.getText().toString());
+        //intent.putExtra("ArrTime",et_ArrivalTime.getText().toString());
         startActivity(intent);
     }
 }
