@@ -1,6 +1,7 @@
 package itesm.mx.e_ride;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -30,6 +31,7 @@ public class UserappointmentActivity extends AppCompatActivity implements View.O
         setContentView(R.layout.activity_userappointment);
         getSupportActionBar().setTitle(strNombre);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.VerdeOscuro)));
 
         btn_submit=findViewById(R.id.btn_submitUser);
         et_To=findViewById(R.id.et_To);

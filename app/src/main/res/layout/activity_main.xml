@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_margin="20dp"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context="itesm.mx.e_ride.MainActivity">
 
@@ -12,79 +13,98 @@
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_margin="20dp"
         app:srcCompat="@drawable/e_ride" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/gotham_black"
-        android:letterSpacing="250"
-        android:text="@string/username" />
+        android:text="@string/username"
+        android:textColor="@color/GrisClaroLetra" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:backgroundTint="@color/VerdeOscuro"
         android:ems="10"
         android:fontFamily="@font/gotham_black"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:text="fer_romero"
+        android:textColor="@color/GrisOscuroLetra" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/gotham_black"
-        android:text="@string/password" />
+        android:text="@string/password"
+        android:textColor="@color/GrisClaroLetra" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:backgroundTint="@color/VerdeOscuro"
         android:ems="10"
         android:fontFamily="@font/gotham_black"
         android:inputType="textPassword"
-        android:text="Name" />
+        android:text="Name"
+        android:textColor="@color/GrisOscuroLetra" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
         android:orientation="vertical"
-        android:weightSum="3">
+        android:weightSum="4">
 
         <Button
             android:id="@+id/btn_LogIn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:background="@drawable/button_green"
             android:fontFamily="@font/gotham_black"
-            android:text="Button" />
+            android:text="Sign In"
+            android:textColor="@android:color/background_light" />
 
         <Button
             android:id="@+id/btn_Register"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:background="@drawable/button_green"
+            android:background="@drawable/button_white"
             android:fontFamily="@font/gotham_black"
-            android:text="Button" />
+            android:text="Register"
+            android:textColor="@color/GrisClaroLetra" />
 
         <Button
             android:id="@+id/btn_FAQs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
             android:layout_weight="1"
-            android:background="@drawable/button_green"
+            android:background="@null"
             android:fontFamily="@font/gotham_black"
-            android:text="Button" />
+            android:foregroundGravity="bottom|center"
+            android:text="FAQ's"
+            android:textColor="@color/VerdeOscuro" />
 
     </LinearLayout>
 

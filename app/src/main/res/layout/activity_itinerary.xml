@@ -8,48 +8,82 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/appointment4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/VerdeOscuro"
+            android:editable="false"
+            android:ems="10"
+            android:fontFamily="@font/gotham_black"
+            android:gravity="center"
+            android:inputType="none"
+            android:text="ITINERARY"
+            android:textColor="@color/VerdeOscuro" />
 
         <LinearLayout
             android:id="@+id/InfoPassengers"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView27"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/droidserifregular"
+                android:fontFamily="@font/gotham_black"
                 android:paddingStart="20dp"
                 android:paddingTop="10dp"
                 android:text="Seat 1:"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/textView26"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/droidserifregular"
-                android:paddingStart="20dp"
-                android:paddingTop="10dp"
-                android:text="Fernando Romero"
+                android:textColor="@color/VerdeOscuro"
                 android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_black"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Name:"
+                    android:textColor="@color/GrisClaroLetra"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_black"
+                    android:paddingStart="20dp"
+                    android:text="Fernando Romero"
+                    android:textColor="@color/GrisOscuroLetra"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView25"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/droidserifregular"
+                    android:fontFamily="@font/gotham_black"
                     android:paddingStart="20dp"
                     android:paddingTop="10dp"
                     android:text="Location:"
+                    android:textColor="@color/GrisClaroLetra"
                     android:textSize="16sp" />
 
                 <TextView
@@ -57,37 +91,44 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/droidserifregular"
-                    android:paddingTop="10dp"
+                    android:fontFamily="@font/gotham_black"
+                    android:paddingLeft="20dp"
                     android:text="Cumbres"
+                    android:textColor="@color/GrisOscuroLetra"
                     android:textSize="16sp" />
 
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                app:srcCompat="@drawable/ic_launcher_background" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/btn_nextDriver"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/droidserifregular"
-                    android:text="Next"
-                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_nextDriver"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/button_green"
+                android:fontFamily="@font/gotham_black"
+                android:text="Next"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

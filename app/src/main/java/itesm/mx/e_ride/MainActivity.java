@@ -1,6 +1,7 @@
 package itesm.mx.e_ride;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         btn_logIn=findViewById(R.id.btn_LogIn);
         btn_register=findViewById(R.id.btn_Register);
@@ -53,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_LogIn:
-                intent= new Intent(this,LoginActivity.class);
+                intent= new Intent(this,ChooseActivity.class);
                 startActivity(intent);
                 break;
 

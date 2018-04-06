@@ -1,6 +1,7 @@
 package itesm.mx.e_ride;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -23,6 +24,7 @@ public class ItineraryActivity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.activity_itinerary);
         getSupportActionBar().setTitle(strNombre);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.VerdeOscuro)));
 
         btn_next=findViewById(R.id.btn_nextDriver);
         btn_next.setOnClickListener(this);
